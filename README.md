@@ -1,11 +1,11 @@
 About yaml2ncml
 ===============
 
-Home: https://github.com/rsignell-usgs/yaml2ncml
+Home: https://github.com/usgs-cmg/yaml2ncml
 
 Package license: MIT
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: NcML aggregation from YAML specification
 
