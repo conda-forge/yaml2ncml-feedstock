@@ -1,7 +1,7 @@
 About yaml2ncml
 ===============
 
-Home: https://github.com/rsignell-usgs/yaml2ncml
+Home: https://github.com/USGS-CMG/yaml2ncml
 
 Package license: MIT
 
