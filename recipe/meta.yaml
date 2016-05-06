@@ -27,10 +27,11 @@ test:
         - yaml2ncml
 
 about:
-    home: https://github.com/rsignell-usgs/yaml2ncml
+    home: https://github.com/usgs-cmg/yaml2ncml
     license: MIT
     summary: NcML aggregation from YAML specification
 
 extra:
     recipe-maintainers:
         - ocefpaf
+        - rsignell-usgs
