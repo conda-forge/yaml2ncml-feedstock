@@ -7,9 +7,21 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: NcML aggregation from YAML specification
+Summary: NcML aggregation from YAML specification.
 
 
+
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/yaml2ncml-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/yaml2ncml-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/yaml2ncml-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/yaml2ncml-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/yaml2ncml-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/yaml2ncml-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/yaml2ncml/badges/version.svg)](https://anaconda.org/conda-forge/yaml2ncml)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/yaml2ncml/badges/downloads.svg)](https://anaconda.org/conda-forge/yaml2ncml)
 
 Installing yaml2ncml
 ====================
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/yaml2ncml-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/yaml2ncml-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/yaml2ncml-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/yaml2ncml-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/yaml2ncml-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/yaml2ncml-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/yaml2ncml/badges/version.svg)](https://anaconda.org/conda-forge/yaml2ncml)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/yaml2ncml/badges/downloads.svg)](https://anaconda.org/conda-forge/yaml2ncml)
 
 
 Updating yaml2ncml-feedstock
