@@ -1,27 +1,30 @@
-{% set version = "0.6.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: yaml2ncml
   version: {{ version }}
 
 source:
-  fn: yaml2ncml-{{ version }}.tar.gz
   url: https://github.com/USGS-CMG/yaml2ncml/archive/v{{ version }}.tar.gz
-  sha256:
+  sha256: 5544d4835907e0fe2d42bde7418ca2b4b7a52169dd8d649fe7b5a6e705006dca
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
+  entry_points:
+    - yaml2ncml = yaml2ncml.yaml2ncml:main
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - docopt
     - netcdf4
     - ruamel.yaml
+    - six
 
 test:
   imports:
