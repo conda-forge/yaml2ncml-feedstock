@@ -1,4 +1,4 @@
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: yaml2ncml
@@ -6,17 +6,17 @@ package:
 
 source:
   url: https://github.com/USGS-CMG/yaml2ncml/archive/v{{ version }}.tar.gz
-  sha256: 5544d4835907e0fe2d42bde7418ca2b4b7a52169dd8d649fe7b5a6e705006dca
+  sha256: d9fd6841d4f168c306bc331af64469811d4794b3500801d06ffe32c580c51c6b
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - yaml2ncml = yaml2ncml.yaml2ncml:main
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
@@ -36,7 +36,7 @@ about:
   home: https://github.com/usgs-cmg/yaml2ncml
   license: MIT
   license_file: LICENSE.txt
-  summary: 'NcML aggregation from YAML specification.'
+  summary: NcML aggregation from YAML specification.
 
 extra:
   recipe-maintainers:
