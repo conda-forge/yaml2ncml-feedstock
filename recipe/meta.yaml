@@ -1,4 +1,4 @@
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 package:
   name: yaml2ncml
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/USGS-CMG/yaml2ncml/archive/v{{ version }}.tar.gz
-  sha256: d9fd6841d4f168c306bc331af64469811d4794b3500801d06ffe32c580c51c6b
+  sha256: 238654fb5ebe2b95a64dc0de4fd398eb7a18a416d8664616065f96617a1267b6
 
 build:
   number: 0
