@@ -9,23 +9,26 @@ source:
   sha256: 238654fb5ebe2b95a64dc0de4fd398eb7a18a416d8664616065f96617a1267b6
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - yaml2ncml = yaml2ncml.yaml2ncml:main
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - docopt
     - netcdf4
     - ruamel.yaml
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - yaml2ncml
   commands:
